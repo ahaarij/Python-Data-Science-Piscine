@@ -22,4 +22,3 @@ def all_thing_is_obj(object: any) -> int:
     except Exception as e:
         print(f"Error : {e}")
     return 42
-                

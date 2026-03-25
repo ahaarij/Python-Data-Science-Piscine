@@ -1,6 +1,7 @@
 import sys
 
-def check_odd_or_even(number : int):
+
+def check_odd_or_even(number: int):
 
     assert isinstance(number, int), "argument is not an integer"
     if number % 2 == 0:
@@ -16,7 +17,6 @@ try:
         i_arg = int(sys.argv[1])
         check_odd_or_even(i_arg)
 except AssertionError as e:
-    print(f"Assertion Error : {e}")
+    print(f"Assertion Error: ", e)
 except ValueError:
     print("AssertionError: argument is not an integer")
-        
