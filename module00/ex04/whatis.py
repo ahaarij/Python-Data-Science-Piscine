@@ -17,6 +17,6 @@ try:
         i_arg = int(sys.argv[1])
         check_odd_or_even(i_arg)
 except AssertionError as e:
-    print(f"Assertion Error: ", e)
+    print("Assertion Error: ", e)
 except ValueError:
     print("AssertionError: argument is not an integer")
