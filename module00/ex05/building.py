@@ -2,10 +2,29 @@ import sys
 
 
 def is_punct(char):
+    """
+    Checks if the given character is a punctuation mark.
+
+    Parameters:
+        char (str): The character to check.
+
+    Returns:
+        bool: True if the character is a punctuation mark, False otherwise.
+    """
     return char in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
 
 def count_char(text):
+    """
+    Counts the amount of different types of characters(upper, lower,
+    punctuation, spaces, digits) in the given text and print them.
+
+    Parameters:
+        text (str): The input text to count characters from.
+
+    Returns:
+        None
+    """
     upper_count = 0
     lower_count = 0
     digit_count = 0
@@ -34,6 +53,18 @@ def count_char(text):
 
 
 def main():
+    """
+    Main function of the program.
+    It checks if the user has provided a text to count characters as
+    an argument, and if not, it asks for it. Then it calls the
+    count_characters function with the given text.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
     s_arg = ""
 
     try:
