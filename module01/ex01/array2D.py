@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def slice_me(family: list, start: int, end: int) -> list:
     try:
         if not isinstance(family, list) \
@@ -13,4 +14,3 @@ def slice_me(family: list, start: int, end: int) -> list:
         return np.array(family)[start:end].tolist()
     except AssertionError as e:
         print("Assertion Error: ", e)
-        

@@ -79,7 +79,7 @@ def main():
     except AssertionError as e:
         print("Assertion Error: ", e)
     except EOFError:
-        s = ""
+        pass
     except KeyboardInterrupt:
         pass
 
